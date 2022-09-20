@@ -10,7 +10,7 @@ redis = Redis(host='redis', port=6379)
 
 
 
-@app.route('/home')
+@app.route('/')
 def home():
     # Counter of Page visit
     redis.incr('hits')
